@@ -1,0 +1,342 @@
+
+
+.heading{
+	text-align: center;
+	padding: 80px 0 100px;
+	position: relative;
+}
+.heading h2{
+	font-size: 40px;
+	color: #2d3959;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.heading p{
+	color: #999999;
+	font-size: 20px;
+}
+
+/*==========================Header Section Start==========================*/
+#header-section{
+	background-color: #f6f9f9;
+	padding: 18px 0;
+	width: 100%;
+}
+#header-section .logo{
+	max-width: 20%;
+	flex-basis: 20%;
+}
+#header-section nav{
+	max-width: 80%;
+	flex-basis: 80%;
+}
+#header-section nav ul{
+	justify-content: flex-end;
+}
+#header-section nav ul li a{
+	color: #2d3959;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 14px;
+	transition: background-color .5s;
+	display: block;
+}
+#header-section nav ul li a:hover{
+	color: #fff;
+	background-color: #15a4fa;
+}
+/*==========================Header Section Ends==========================*/
+
+
+/*==========================Banner Section Start==========================*/
+#banner-section{
+	background: url(../imgs/banner.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+#banner-section .row{
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+#banner-section .banner-content{
+	text-align: center;
+	max-width: 50%;
+	flex-basis: 50%;
+}
+#banner-section .banner-content h1{
+	font-size: 120px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 20px;
+}
+#banner-section .banner-content span{
+	width: 100%;
+	height: 2px;
+	background-color: #15a4fa;
+	display: block;
+}
+#banner-section .banner-content p{
+	font-size: 20px;
+	color: #fff;
+	margin-top: 35px;
+	margin-bottom: 60px;
+}
+#banner-section .banner-content button{
+	font-size: 18px;
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #15a4fa;
+	padding: 15px 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color .5s;
+}
+#banner-section .banner-content button:hover{
+	background-color: #15a4fa;
+	border-radius: 8px;
+}
+#banner-section .arrow-down{
+	position: absolute;
+	color: #fff;
+	font-size: 30px;
+	bottom: 1em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+ /*==========================Banner Section Ends==========================*/
+
+
+/*=================About Section Start====================================*/
+#about-section{
+	background-color: #f6f9f9;
+}
+ /*=================About Section Ends====================================*/
+
+
+/*==========================Features Section Start==========================*/
+#features-section .feature{
+	max-width: 33.33%;
+	flex-basis: 33.33%;
+	text-align: center;
+	padding: 65px 30px;
+}
+#features-section .feature .feature-icon{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	line-height: 100px;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5fc3ff+50,48baff+50 */
+	background: rgb(95,195,255); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(95,195,255,1) 50%, rgba(72,186,255,1) 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(95,195,255,1) 50%,rgba(72,186,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(95,195,255,1) 50%,rgba(72,186,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fc3ff', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+}
+#features-section .feature .feature-icon i{
+	font-size: 50px;
+	color: #fff;
+	line-height: 2;
+	text-shadow: 2px 3px 5px #71717161; 
+}
+#features-section .feature h3{
+	font-size: 22px;
+	color: #2d3950;
+	margin: 20px 0;
+}
+#features-section .feature p{
+	font-size: 15px;
+	color: #999999;
+}
+ /*==========================Features Section Ends==========================*/
+
+
+/*==========================Showcase Section Start==========================*/
+#showcase-section{
+	background-color: #f6f9f9;
+	padding-bottom: 100px
+}
+#showcase-section .showcase{
+	max-width: 33.33%;
+	flex-basis: 33.33%;
+	padding: 15px;
+}
+#showcase-section .showcase-detail{
+	position: relative;
+	overflow: hidden;
+	transition: all .5s;
+}
+#showcase-section .showcase-detail:hover img{
+	transform: scale(1.05);
+}
+#showcase-section .showcase-detail .overlay{
+	width: 100%;
+	height: 0;
+	position: absolute;
+	background-color: #15a4fad9;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.4s;
+}
+#showcase-section .showcase-detail:hover .overlay{
+	opacity: 1;
+	height: 100%;
+}
+#showcase-section .showcase-detail .plus{
+	color: #fff;
+	position: absolute;
+	top: 60%;
+	left: 40%;
+	transform: translate(-40%, -50%);
+	width: 35px;
+	height: 35px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	display: block;
+	text-align: center;
+	line-height: 35px;
+	opacity: 0;
+	transition: all 0.6s;
+}
+#showcase-section .showcase-detail:hover .plus{
+	opacity: 1;
+	top: 50%;
+}
+#showcase-section .showcase-detail .link{
+	color: #fff; 
+	position: absolute;
+	top: 60%;
+	left: 55%;
+	transform: translate(-55%, -50%);
+	width: 35px;
+	height: 35px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	display: block;
+	text-align: center;
+	line-height: 35px;
+	opacity: 0;
+	transition: all 0.6s;
+}
+#showcase-section .showcase-detail:hover .link{
+	opacity: 1;
+	top: 50%;
+}
+ /*==========================Showcase Section Ends==========================*/
+
+
+/*==========================Contact Section Start==========================*/
+#contact-section{
+	background-image: url(../imgs/contact.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding-bottom: 100px;
+	position: relative;
+}
+#contact-section .row{
+	justify-content: center;
+	position: relative;
+}
+#contact-section .overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color:rgba(45, 57, 80, 0.9);
+}
+#contact-section .heading h2{
+	color: #fff; 
+}
+#contact-section .contact-form{
+	max-width: 60%;
+	flex-basis: 60%;
+}
+#contact-section .contact-form input,
+#contact-section .contact-form textarea{
+	width: 100%;
+	padding: 20px;
+	border: 1px solid #999;
+	border-radius: 5px;
+	font-size: 15px;
+	margin-bottom: 10px;
+	background-color: transparent;
+	color: #999;
+}
+#contact-section .contact-form form ul{
+	align-items: center;
+}
+#contact-section .contact-form form ul li{
+	max-width: 50%;
+	flex-basis: 50%;
+}
+#contact-section .contact-form form ul li input[type="checkbox"]{
+	width: auto;
+}
+#contact-section .contact-form form ul li input[type="submit"]{
+	width: auto;
+	float: right;
+	font-size: 18px;
+	padding: 12px 50px;
+	border-color: #15a4fa;
+	cursor: pointer;
+	transition: background-color .5s;
+}
+#contact-section .contact-form form ul li input:hover{
+	background-color: #15a4fa;
+	color: #fff;
+}
+#contact-section .contact-form form ul li label{
+	font-size: 15px;
+	color: #fff;
+	margin-left: 10px;
+}
+ /*==========================Contact Section Ends==========================*/
+
+
+/*==========================Footer Section Start==========================*/
+#footer-section{
+	padding: 30px 0;
+}
+#footer-section .row{
+	align-items: center;
+}
+#footer-section .copyright{
+	max-width: 50%;
+	flex-basis: 50%;
+}
+#footer-section .copyright p{
+	color: #999;
+	font-size: 15px;
+}
+#footer-section .copyright p a{
+	color: #999;
+}
+#footer-section .social{
+	max-width: 50%;
+	flex-basis: 50%;
+}
+#footer-section .social ul{
+	justify-content: flex-end;
+}
+#footer-section .social ul li a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 5px;
+	margin-left: 10px;
+	background-color: #15a4fa;
+	transition: background-color .5s;
+}
+#footer-section .social ul li a:hover{
+	background-color: #2d3950;
+}
+ /*==========================Footer Section Ends==========================*/
